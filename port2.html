@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>CSS & HTML</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"href="css/port.css">
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="sidebar collapse top text-large padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="port-button hide-large display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="container">
+    <a href="index.html"><img src="img/logoINV2.png" alt="My Logo" class="logo"></a>
+  </div>
+  <div class="bar-block">
+    <a href="port1.html" onclick="w3_close()" class="navigation-item port-button">Graphic Design</a> 
+    <a href="port2.html" onclick="w3_close()" class="navigation-item port-button">HTML & CSS</a> 
+    <a href="port3.html" onclick="w3_close()" class="navigation-item port-button">Web-Based Application</a> 
+    <a href="port4.html" onclick="w3_close()" class="navigation-item port-button">Human-Computer Interaction</a> 
+	<a href="port5.html" onclick="w3_close()" class="navigation-item port-button">Pen Testesting & Security</a> 
+    <a href="port6.html" onclick="w3_close()" class="navigation-item port-button">Mobile Application</a>
+	<a href="contact.html" onclick="w3_close()" class="navigation-item port-button">Contact Me</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="container top hide-large sidebar-color w3-xlarge padding">
+  <a href="javascript:void(0)" class="port-button sidebar-color margin-right" onclick="w3_open()">☰</a>
+  <span>HTML & CSS</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="small-overlay hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="container" style="margin-top:80px" id="showcase">
+    <h1 class="title-name"><b>HTML & CSS</b></h1>
+    <h1 class="subtitle-name"><b>Project.</b></h1>
+    <hr class="round-edge">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="img-row-padding">
+    <div class="half">
+      <img src="img/portfolio/CSS1.png" style="width:100%" onclick="onClick(this)" alt="Home Page / Login Tab">
+      <img src="img/portfolio/CSS4.png" style="width:100%" onclick="onClick(this)" alt="Game / Responsive Page ">
+      <img src="img/portfolio/CSS3.png" style="width:100%" onclick="onClick(this)" alt="About Us / Different Sections Page">
+    </div>
+
+    <div class="half">
+      <img src="img/portfolio/CSS2.png" style="width:100%" onclick="onClick(this)" alt="Home Page / Register New user Tab">
+      <img src="img/portfolio/CSS5.png" style="width:100%" onclick="onClick(this)" alt="Gallery / User Interaction">
+      <img src="img/portfolio/CSS6.png" style="width:100%" onclick="onClick(this)" alt="Contact Us / Form Page">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="modal color-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="port-button display-topright">×</span>
+    <div class="modal-content animate-zoom transparent">
+      <img id="img01" class="image-html">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Overview -->
+  <div class="container" id="services" style="margin-top:75px">
+    <h1 class="subtitle-name"><b>Overview.</b></h1>
+    <hr class="round-edge">
+    <p>In addition to the logo on my website, I also fully created this responsive website from scratch using HTML and CSS.
+	I personally feel very comfortable with the HTML, CSS, and even javaScript language. </p>
+    <p>In the example above, you can see one of the first websites I ever built in school using simple HTML and CSS. 
+	The website itself is supposed to be an interactive educational type website, that allows any visiting users to learn more 
+	about HTML and CSS in the form of a game. With this in mind, the index page offers the user the ability to login or create 
+	a new account that will keep track of the user’s progress and achievements. The index page also contains a navigation bar 
+	that allows the user to click through other pages on the site like the gallery, about us, and contact us page. Not only this, 
+	but once the user logs in successfully or registers on to the website he is directed to the game portion of the site. 
+	Using a few customize buttons and a little javaScript code I allow the user to click through the website and learn more about 
+	HTML and CSS by changing the text, color, and font on the screen depending on the different buttons they click on. The webpage 
+	also educates the user on other HTML and CSS concepts like, html tags, selectors, and classes. The about Us page, allows the 
+	user to learn more about the creator and his goals, as well as a donation section that allows the user to donate and support 
+	the website. Lastly, the contact us page offers the user the ability to contact the website creator and submit any questions 
+	or feedback he has regarding the website.   
+    </p>
+  </div>
+  
+  <!-- Skills Learned -->
+  <div class="container" id="designers" style="margin-top:75px">
+    <h1 class="subtitle-name"><b>Skills Learned</b></h1>
+    <hr class="round-edge">
+    <p>Some of the skills learned from this project were.</p>
+    <p>This particular HTML project taught me how to create a responsive website that can drastically change what is displayed on 
+	the screen, depending on what the user clicks on to trigger these changes. Not only this, but I also learned how to effectively use the
+	&ltdiv&gt tags to properly position data on the screen and avoid clutter and misdirection for the user.  I also learn about some visual queues
+	that can be used to guide the user through the website like zoom in object, color change when the mouse hovers, and also multiple buttons for
+	the user to click on and explore for himself. 
+    </p>
+    <p><b>Other Designs</b>:</p>
+  </div>
+
+  <!-- Other Designs: -->
+  <div class="img-row-padding grayscale">
+    <div class="other-Examples">
+      <div class="light-grey">
+        <img src="img/portfolio/CSS-01.png" alt="Exampl 1" style="width:100%">
+        <div class="container">
+          <h3>Trip Smart</h3>
+          <p class="opacity">Informative Website</p>
+          <p>One of the first simple basic informative type websites, I created while I was in school.</p>
+        </div>
+      </div>
+    </div>
+    <div class="other-Examples">
+      <div class="light-grey">
+        <img src="img/portfolio/CSS-02.png" alt="Example 2" style="width:100%">
+        <div class="container">
+          <h3>Sports Cars</h3>
+          <p class="opacity">Web Blog</p>
+          <p>Another type of website I’ve build for a school project was this simple blog/Fan Webpage.</p>
+        </div>
+      </div>
+    </div>
+    <div class="other-Examples">
+      <div class="light-grey">
+        <img src="img/portfolio/CSS-03.png" alt="Example 3" style="width:100%">
+        <div class="container">
+          <h3>Hotel Website</h3>
+          <p class="opacity">Travel Site</p>
+          <p>Taking inspiration from a website I saw online; I recreated a similar travel website to test my skills.</p> 
+        </div>
+      </div>
+	  <br/>
+    </div>
+  </div>
+  
+
+	
+
+</div>
+
+<!-- End page content -->
+</div>
+   <!-- Footer -->
+  <div class="container sidebar-color footer-padding" >
+	<div class="col-3">
+		<p>Here is a list of some of the API systems' and computer languages, 
+		that I am very familiar with. I can proficianly work and incorporate
+		and of these to any project.</p>
+	</div>
+
+	<div class="col-1">
+		<ul class = "unstyled-list">
+			<li><strong>APIs</strong></li>
+			<li>Netbeans</li>
+			<li>Eclipse</li>
+			<li>AWS Cloud9</li>
+			<li>xCode</li>
+		</ul>
+	</div>
+
+	<div class="col-1">
+		<ul class = "unstyled-list">
+			<li><strong>Languages</strong></li>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>Java</li>
+			<li>JavaScript</li>
+		</ul>
+	</div>
+	
+	<div class="col-1">
+		<ul class = "unstyled-list">
+			<li>Swift</li>
+			<li>Ruby</li>
+			<li>c++</li>
+			<li>MySql</li>
+			<li>Php</li>
+		</ul>
+	</div>
+	
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

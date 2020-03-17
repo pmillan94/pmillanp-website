@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Pen Testing & Security</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"href="css/port.css">
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="sidebar collapse top text-large padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="port-button hide-large display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="container">
+    <a href="index.html"><img src="img/logoINV2.png" alt="My Logo" class="logo"></a>
+  </div>
+  <div class="bar-block">
+    <a href="port1.html" onclick="w3_close()" class="navigation-item port-button">Graphic Design</a> 
+    <a href="port2.html" onclick="w3_close()" class="navigation-item port-button">HTML & CSS</a> 
+    <a href="port3.html" onclick="w3_close()" class="navigation-item port-button">Web-Based Application</a> 
+    <a href="port4.html" onclick="w3_close()" class="navigation-item port-button">Human-Computer Interaction</a> 
+	<a href="port5.html" onclick="w3_close()" class="navigation-item port-button">Pen Testesting & Security</a> 
+    <a href="port6.html" onclick="w3_close()" class="navigation-item port-button">Mobile Application</a>
+	<a href="contact.html" onclick="w3_close()" class="navigation-item port-button">Contact Me</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="container top hide-large sidebar-color w3-xlarge padding">
+  <a href="javascript:void(0)" class="port-button sidebar-color margin-right" onclick="w3_open()">☰</a>
+  <span>Security</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="small-overlay hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="container" style="margin-top:80px" id="showcase">
+    <h1 class="title-name"><b>Pen Testing & Security</b></h1>
+    <h1 class="subtitle-name"><b>Project.</b></h1>
+    <hr class="round-edge">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="img-row-padding">
+    <div class="half">
+      <img src="img/portfolio/XSS3.png" style="width:100%" onclick="onClick(this)" alt="Example 1: Found SQL Injection vulnerability in Homepage">
+	  <img src="img/portfolio/XSS1.png" style="width:100%" onclick="onClick(this)" alt="Attempted to login using simple SQL Injection">
+      <img src="img/portfolio/XSS2.png" style="width:100%" onclick="onClick(this)" alt="Logged in successfully using SQL Injection">
+    </div>
+
+    <div class="half">
+      <img src="img/portfolio/XSS6L.png" style="width:100%" onclick="onClick(this)" alt="Example 2: Discovered XSS Vulnerabilities in comments page">
+	  <img src="img/portfolio/XSS4.png" style="width:100%" onclick="onClick(this)" alt="Attempted to duplicate an XSS Attack on comment section">
+      <img src="img/portfolio/XSS5.png" style="width:100%" onclick="onClick(this)" alt="Successfully performed an XSS Attack on comments page">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="modal color-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="port-button display-topright">×</span>
+    <div class="modal-content animate-zoom transparent">
+      <img id="img01" class="image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Overview -->
+  <div class="container" id="services" style="margin-top:75px">
+    <h1 class="subtitle-name"><b>Overview.</b></h1>
+    <hr class="round-edge">
+    <p>While I am not heavily dependent on my cyber security skills, I am fairly knowledgeable on how to spot certain web vulnerabilities,
+	and even how to mitigate them. With this in mind, here is an example of a project that I completed in school involving pen testing and
+	other security protocols.</p>
+    <p>There were several vulnerabilities in the assigned website that allowed attackers to gain access to the site without authorization.
+	Not only this but, attackers were able to login as random users, specific users, and even register as new users with an unlimited 
+	amount of funds without a credit card information required. In the first example above, I was able to exploit the vulnerability in the
+	LoginAction page and perform a SQL injection attack in the login screen in order to login as a random user. Using <b>(“‘ or ‘a=’a ”)</b> as 
+	the password, I was able to bypass the user authentication process and login to the website with out and issue, because the SQL injection I 
+	used was making sure that no matter what user I type in the text field the password will always be true, allowing me to login as the first user
+	in the database, which was the user "johnDoe" in this case.</p>
+	<p>In the second example, I demonstrate a XSS vulnerability found on the Tunestore website, this time located on the comment’s page
+	textbox area. Exploiting this vulnerability I was able to inject the website with a script that displays an alert as soon as another user clicks on the comments page.
+	I started by logging in as a specific user already registered to the site. Then navigated over to the comments page of one of the CDs and
+	typed the following script on the comments box (“<b>&ltscript&gt alert(“You have been haceked!! Click her to recover account”); &lt/script&gt”</b>)
+	and clicked on submit, and successfully inject my code in to the website. This can be very malicious and attackers can use this type of vulnerability to phish for user data. 
+	
+    </p>
+  </div>
+  
+  <!-- Skills Learned -->
+  <div class="container" id="designers" style="margin-top:75px">
+    <h1 class="subtitle-name"><b>Skills Learned</b></h1>
+    <hr class="round-edge">
+    <p>Some skills I learned were.</p>
+    <p>Thanks to this project I am now able to apply penetrating testing techniques on
+	web applications, as well as how to describe key steps in secure programming, including
+	static analysis, dynamic analysis, handling secrets, and principles of secure software 
+	design. Including the ability to be able to analyze a software for possible security 
+	vulnerabilities and perform dynamic analysis, construct secure web applications, and 
+	describe robust programming techniques.
+    </p>
+    <p><b>Other Examples</b>:</p>
+  </div>
+
+  <!-- Other Designs: -->
+  <div class="img-row-padding grayscale">
+    <div class="other-Examples">
+      <div class="light-grey">
+        <img src="img/portfolio/XSS-01.png" alt="Exampl 1" style="width:100%">
+        <div class="container">
+		  <br/>
+          <h3>Malware</h3>
+          <p class="opacity">Poison Ivy RAT</p>
+          <p>In this exercise I became more familiar with the basic attack tool (RAT) capable of gaining full control over a target computer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="other-Examples">
+      <div class="light-grey">
+        <img src="img/portfolio/XSS-02.png" alt="Example 2" style="width:100%">
+        <div class="container">
+          <h3>Advanced</h3>
+          <p class="opacity">Command Line injections</p>
+          <p>This allows me to create several different types of attacks and then evaluate some of the source code that allows these attacks.</p>
+        </div>
+      </div>
+    </div>
+    <div class="other-Examples">
+      <div class="light-grey">
+        <img src="img/portfolio/XSS-03.png" alt="Example 3" style="width:100%">
+        <div class="container">
+          <h3>Access Control</h3>
+          <p class="opacity">Share and NTFS permissions</p>
+          <p>This lab demonstrated Share permissions and NTFS permissions and their effect when combined. </p> 
+        </div>
+      </div>
+	  <br/>
+    </div>
+  </div>
+  
+
+	
+
+</div>
+
+<!-- End page content -->
+</div>
+   <!-- Footer -->
+  <div class="container sidebar-color footer-padding" >
+	<div class="col-3">
+		<p>Here is a list of some of the API systems' and computer languages, 
+		that I am very familiar with. I can proficianly work and incorporate
+		and of these to any project.</p>
+	</div>
+
+	<div class="col-1">
+		<ul class = "unstyled-list">
+			<li><strong>APIs</strong></li>
+			<li>Netbeans</li>
+			<li>Eclipse</li>
+			<li>AWS Cloud9</li>
+			<li>xCode</li>
+		</ul>
+	</div>
+
+	<div class="col-1">
+		<ul class = "unstyled-list">
+			<li><strong>Languages</strong></li>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>Java</li>
+			<li>JavaScript</li>
+		</ul>
+	</div>
+	
+	<div class="col-1">
+		<ul class = "unstyled-list">
+			<li>Swift</li>
+			<li>Ruby</li>
+			<li>c++</li>
+			<li>MySql</li>
+			<li>Php</li>
+		</ul>
+	</div>
+	
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

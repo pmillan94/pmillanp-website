@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Human-Computer Interaction</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"href="css/port.css">
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="sidebar collapse top text-large padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="port-button hide-large display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="container">
+    <a href="index.html"><img src="img/logoINV2.png" alt="My Logo" class="logo"></a>
+  </div>
+  <div class="bar-block">
+    <a href="port1.html" onclick="w3_close()" class="navigation-item port-button">Graphic Design</a> 
+    <a href="port2.html" onclick="w3_close()" class="navigation-item port-button">CSS & HTML</a> 
+    <a href="port3.html" onclick="w3_close()" class="navigation-item port-button">Web-Based Application</a> 
+    <a href="port4.html" onclick="w3_close()" class="navigation-item port-button">Human-Computer Interaction</a> 
+	<a href="port5.html" onclick="w3_close()" class="navigation-item port-button">Pen Testesting & Security</a> 
+    <a href="port6.html" onclick="w3_close()" class="navigation-item port-button">Mobile Application</a>
+	<a href="contact.html" onclick="w3_close()" class="navigation-item port-button">Contact Me</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="container top hide-large sidebar-color w3-xlarge padding">
+  <a href="javascript:void(0)" class="port-button sidebar-color margin-right" onclick="w3_open()">☰</a>
+  <span>Human-Computer Interaction</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="small-overlay hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="container" style="margin-top:80px" id="showcase">
+    <h1 class="title-name"><b>Human-Computer Interaction</b></h1>
+    <h1 class="subtitle-name"><b>Project.</b></h1>
+    <hr class="round-edge">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="img-row-padding">
+    <div class="half">
+      <img src="img/portfolio/GD1.png" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="img/portfolio/GD2.png" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="img/portfolio/GD3.png" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+    </div>
+
+    <div class="half">
+      <img src="img/portfolio/GD4.png" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="img/portfolio/GD5.png" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="img/portfolio/GD6.png" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="modal color-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="port-button display-topright">×</span>
+    <div class="modal-content animate-zoom transparent">
+      <img id="img01" class="image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Overview -->
+  <div class="container" id="services" style="margin-top:75px">
+    <h1 class="subtitle-name"><b>Overview.</b></h1>
+    <hr class="round-edge">
+    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+  
+  <!-- Skills Learned -->
+  <div class="container" id="designers" style="margin-top:75px">
+    <h1 class="subtitle-name"><b>Skills Learned</b></h1>
+    <hr class="round-edge">
+    <p>The best team in the world.</p>
+    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p><b>Other Designs</b>:</p>
+  </div>
+
+  <!-- Other Designs: -->
+  <div class="img-row-padding grayscale">
+    <div class="other-Examples">
+      <div class="light-grey">
+        <img src="img/0.jpg" alt="Exampl 1" style="width:100%">
+        <div class="container">
+          <h3>John Doe</h3>
+          <p class="opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="other-Examples">
+      <div class="light-grey">
+        <img src="img/0.jpg" alt="Example 2" style="width:100%">
+        <div class="container">
+          <h3>Jane Doe</h3>
+          <p class="opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="other-Examples">
+      <div class="light-grey">
+        <img src="img/0.jpg" alt="Example 3" style="width:100%">
+        <div class="container">
+          <h3>Mike Ross</h3>
+          <p class="opacity">Architect</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p> 
+        </div>
+      </div>
+	  <br/>
+    </div>
+  </div>
+  
+
+	
+
+</div>
+
+<!-- End page content -->
+</div>
+   <!-- Footer -->
+  <div class="container sidebar-color footer-padding" >
+	<div class="col-3">
+		<p>Here is a list of some of the API systems' and computer languages, 
+		that I am very familiar with. I can proficianly work and incorporate
+		and of these to any project.</p>
+	</div>
+
+	<div class="col-1">
+		<ul class = "unstyled-list">
+			<li><strong>APIs</strong></li>
+			<li>Netbeans</li>
+			<li>Eclipse</li>
+			<li>AWS Cloud9</li>
+			<li>xCode</li>
+		</ul>
+	</div>
+
+	<div class="col-1">
+		<ul class = "unstyled-list">
+			<li><strong>Languages</strong></li>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>Java</li>
+			<li>JavaScript</li>
+		</ul>
+	</div>
+	
+	<div class="col-1">
+		<ul class = "unstyled-list">
+			<li>Swift</li>
+			<li>Ruby</li>
+			<li>c++</li>
+			<li>MySql</li>
+			<li>Php</li>
+		</ul>
+	</div>
+	
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
